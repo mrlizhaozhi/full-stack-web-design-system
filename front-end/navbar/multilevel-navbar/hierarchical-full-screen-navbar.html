@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Hierarchical Full-Screen Top Navigation Bar</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav>
+		<div id="navbar-top"></div>
+		<div id="navbar-shown">
+			<div class="container">
+				<a href="javascript:void(0);" onclick="openNav();">
+					<img id="open-menu" alt="Open Menu" src="img/open-menu-light-left.png">
+				</a>
+				<a href="https://mrlizhaozhi.github.io">
+					<img id="site-logo" alt="Site Logo" src="img/site-logo-dark.png">
+				</a>
+				<ul id="nav-topics">
+					<li><a class="nav-topics-links" href="topics/data-analysis">Data Analysis</a></li>
+					<li><a class="nav-topics-links" href="topics/relational-databases">Relational Databases</a></li>
+					<li><a class="nav-topics-links" href="topics/spreadsheet-modelling">Spreadsheet Modelling</a></li>
+					<li><a class="nav-topics-links" href="topics/project-management">Project Management</a></li>
+					<li><a class="nav-topics-links" href="topics/web-development">Web Development</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="navbar-hidden" class="collapse">
+			<div class="container">
+				<div id="nav-hidden-items">
+					<div id="nav-hidden-left">
+						<ul id="topic-list">
+							<li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'data-analysis');" id="default">Data Analysis ></a></li>
+							<li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'relational-databases');">Relational Databases ></a></li>
+							<li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'spreadsheet-modelling');">Spreadsheet Modelling ></a></li>
+							<li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'project-management');">Project Management ></a></li>
+							<li><a href="javascript:void(0);" class="tablinks" onclick="openTab(event, 'web-development');">Web Development ></a></li>
+						</ul>
+					</div>
+					<div id="nav-hidden-right">
+						<a href="javascript:void(0);" id="backnav" style="border-bottom: 1px solid orange; padding: 20px 0px;" onclick="backNav();">< Back to Main Menu</a>
+						<div id="data-analysis" class="tabcontent">
+							<ul style="padding-left: 0px;">
+								<li><h1>Data Analysis</h1></li>
+								<li><a href="https://github.com/mrlizhaozhi/python-crash-course">Python Crash Course</a></li>
+								<li><a href="https://github.com/mrlizhaozhi/python-for-data-visualisation">Python for Data Visualisation</a></li>
+								<li><a href="https://github.com/mrlizhaozhi/statistical-learning-with-applications-in-r">Statistical Learning with Applications in R</a></li>
+							</ul>
+						</div>
+						<div id="relational-databases" class="tabcontent">
+							<ul style="padding-left: 0px;">
+								<li><h1>Relational Databases</h1></li>
+								<li><a href="https://github.com/mrlizhaozhi/relational-database-with-sql">Relational Database with SQL</a></li>
+							</ul>
+						</div>
+						<div id="spreadsheet-modelling" class="tabcontent">
+							<ul style="padding-left: 0px;">
+								<li><h1>Spreadsheet Modelling</h1></li>
+								<li><a href="https://mrlizhaozhi.github.io/research/github.com/mrlizhaozhi/excel-vba-for-spreadsheet-modelling/">Excel VBA for Spreadsheet Modelling</a></li>
+							</ul>
+						</div>
+						<div id="project-management" class="tabcontent">
+							<ul style="padding-left: 0px;">
+								<li><h1>Project Management</h1></li>
+								<li>Coming Soon...</li>
+							</ul>
+						</div>
+						<div id="web-development" class="tabcontent">
+							<ul style="padding-left: 0px;">
+								<li><h1>Web Development</h1></li>
+								<li><a href="https://github.com/mrlizhaozhi/mrlizhaozhi.github.io">The Official Website of Li Zhaozhi</a></li>
+								<li><a href="https://github.com/mrlizhaozhi/mrlizhaozhi.github.io/tree/main/research">Li Zhaozhi Research Laboratories</a></li>
+								<li><a href="https://github.com/mrlizhaozhi/responsive-web-design/tree/main/front-end">Responsive Web Design: Front End</a></li>
+								<li><a href="https://github.com/mrlizhaozhi/responsive-web-design/tree/main/back-end">Responsive Web Design: Back End</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div style="height: 100vh;"></div>
+
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

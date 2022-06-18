@@ -1,0 +1,188 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+p{
+    font-family: "Open Sans";
+    font-size: 16px;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Garamond";
+}
+
+/* layout */
+
+.container{
+	padding: 10px 10px; 
+	max-width: 1250px; 
+	margin: 0 auto;
+}
+
+.page-index{
+    float: right;
+    min-height: 300px;
+    min-width: 200px;
+    background: beige;
+    margin: 20px;
+}
+
+#site-title{
+    text-align: center;
+}
+
+.mobi-nav{
+    display: none;
+}
+
+.book-container{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.table_of_contents{
+    flex-basis: 20%;
+    height: 100%;
+    order: 1;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+.page_content{
+    flex-basis: 80%;
+    height: 100%;
+    order: 2;
+    overflow-y: auto;
+    display: block;
+}
+
+.tool_bar{
+    padding: 10px;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.page_content_text{
+    padding: 10px;
+}
+
+/* other stuff */
+
+#sidebar-control{
+    float: left;
+    display: block;
+}
+
+.table_of_contents_list{
+    list-style-type: none;
+}
+
+.table_of_contents_list li{
+    margin: 10px 0px;
+}
+
+.tool_bar li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+#switch_mode{
+    padding: 10px;
+    background: lightgrey;
+    float: right;
+    text-decoration: none;
+}
+
+.dark_mode{
+    background: #151515;
+    color: lightgrey;
+}
+
+.dark_mode a{
+    color: lightgrey;
+}
+
+.dark_mode #switch_mode{
+    color: blue;
+}
+
+.dark_mode .page_content_text a{
+    color: wheat;
+}
+.dark_mode .page-index{
+    background: #2E2624;
+}
+.dark_mode .page-index a{
+    color: wheat;
+}
+
+.content_text{
+    min-height: 80vh;
+}
+
+
+@media (max-width: 992px) {    
+    .page-index{
+        min-height: 200px;
+        width: 100%;
+        background: beige;
+        margin: 20px 0px;
+    }
+
+    #sidebar-control{
+        display: none;
+    }
+    .table_of_contents{
+        display: none;
+    }
+    .page_content{
+        flex-basis: 100%;
+    }
+    .mobi-nav{
+        display: block;
+    }
+    .table_of_contents{
+        flex-basis: 100%;
+    }
+    .page_content{
+        flex-basis: 100%;
+    }
+    .book-container{
+        flex-wrap: wrap;
+    }
+    #site-title{
+        display: none;
+    }
+ }
+
+
+ @media (max-width: 991.98px){ 
+	.container{
+		padding: 10px 10px; 
+		max-width: 991.98px;
+	}
+ }
+
+ @media (max-width: 767.98px) {
+	.container{
+		padding: 5px 5px; 
+		max-width: 767.98px;
+	}
+ }
+
+ @media (max-width: 575.98px) {
+	.container{
+		padding: 3px 3px; 
+		max-width: 575.98px;
+	}
+ }
