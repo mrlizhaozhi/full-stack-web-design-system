@@ -1,3 +1,0 @@
-permalink: '/:title/'
-include: [_pages]
-title: Python Essentials for Data Science
