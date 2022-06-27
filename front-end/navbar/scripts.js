@@ -1,3 +1,29 @@
+//basic navbar
+function nav() {
+	var mobinav = document.getElementById("mobinav");
+	if(mobinav.className === "collapse"){
+		mobinav.className += " show";
+	}
+	else{
+		mobinav.className = "collapse";
+	}
+}
+
+
+// banner navbar
+
+function openNav(){
+	var x = document.getElementById('nav-menu');
+	if(x.className === 'nav-links'){
+		x.className += ' open';
+	}
+	else{
+		x.className = 'nav-links';
+	}
+}
+
+// multilevel navbar
+
 function openNav(){
 	var navbarHidden = document.getElementById("navbar-hidden");
 
@@ -73,3 +99,6 @@ function backNav(){
 	document.getElementById('nav-hidden-items').style.gridTemplateAreas = '"nav-hidden-left"';
 	document.getElementById('backnav').style.display = 'block';
 }
+
+// side navbar
+
