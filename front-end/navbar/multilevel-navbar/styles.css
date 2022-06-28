@@ -1,0 +1,49 @@
+html, body{margin: 0px; padding: 0px;width: 100%; height: 100%;}
+*, *::before, *::after{box-sizing: border-box;}
+.container{padding: 10px 50px; max-width: 1250px; margin: 0 auto;}
+nav{width: 100%; height: 100vh; top: 0; z-index: 10;}
+
+/*navbar-top*/
+#navbar-top{background: #062135; height: 40px;}
+
+/*navbar-shown*/
+#navbar-shown{width: 100%; display: inline-block; background: #0a314d;}
+#open-menu{width: auto; height: 30px; vertical-align: middle;  margin-right: 10px; display: inline-block;}
+#site-logo{width: auto; height: 80px; vertical-align: middle; margin-right: 10px; margin-top: -50px; display: inline-block;}
+#nav-topics {display: inline-block;}
+#nav-topics li{display: inline;}
+.nav-topics-links{color: white; text-decoration: none; text-transform:  uppercase; margin-right: 15px; font-size: 14.5px;}
+.nav-topics-links:hover{color: grey;}
+
+/*navbar-hidden*/
+#nav-hidden-left{grid-area: nav-hidden-left; padding-left: 250px; overflow: auto;}
+#nav-hidden-left ul{list-style-type: none; padding-left: 0px;}
+#nav-hidden-left li{padding-bottom: 20px;}
+#nav-hidden-left a{color: white; text-decoration: none;}
+#nav-hidden-left a:hover{color: grey;}
+
+#nav-hidden-right{grid-area: nav-hidden-right; padding-left: 100px; overflow: auto;}
+#nav-hidden-right ul{list-style-type: none; padding-left: 0px;}
+#nav-hidden-right li{padding-bottom: 20px; color: white;}
+#nav-hidden-right a{color: white; text-decoration: none;}
+#nav-hidden-right a:hover{color: grey;}
+#nav-hidden-right h1{color: white; font-family: 'Georgia';}
+
+#nav-hidden-items{display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "nav-hidden-left nav-hidden-right";}
+
+#navbar-hidden{width: 100%; height: 100%; padding: 5px; background: #0a314d;}
+#navbar-hidden.collapse{display: none;}
+#navbar-hidden.display {display: block;}
+
+@media(max-width: 991.98px){
+	#navbar-top{background: #062135; height: 25px;}
+	#nav-hidden-left{padding: 0px;}
+	#nav-hidden-right{padding: 0px;}
+	.container{padding: 0 30px; max-width: 991.98px;}
+	#nav-topics{display: none;}
+	#navbar-shown{padding: 5px; text-align: center;}
+	#site-logo{width: auto; height: 60px; margin-right: 20px; margin-top: -20px;}
+	#open-menu{width: auto; height: 25px; float: left; margin: 10px 0px;}
+	#nav-hidden-items{display: grid; grid-template-columns: 1fr; grid-template-areas: "nav-hidden-left";}
+}
+

@@ -1,0 +1,43 @@
+/* ### ### ### ### ### */
+/* Date of creation: 28 June 2022
+/* Last updated: 28 June 2022
+/* Type: Navigation menu
+/* Developer: Li, Zhaozhi
+/* ### ### ### ### ### */
+
+/* accessories */
+.navbar a{
+	text-decoration: none;
+	color: white;
+}
+
+.logo{
+	width: 150px;
+}
+
+.toggle{
+	width: 50px;
+	float: right;
+}
+
+/* navbar banner */
+.nav-banner{
+	background: #062135;
+	clear: none;
+}
+
+.nav-banner-menu{
+	float: right;
+}
+
+.nav-banner-menu li{
+	display: inline;
+	list-style-type: none;
+	margin: 10px;
+}
+
+/* navbar site */
+.nav-site{
+	background: #0a314d;
+	clear: none;
+}

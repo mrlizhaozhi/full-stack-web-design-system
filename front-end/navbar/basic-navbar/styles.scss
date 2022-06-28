@@ -1,0 +1,24 @@
+.container{padding: 10px 50px; max-width: 1250px; margin: 0 auto;}
+.nav{height: 100%;}
+.nav a{text-decoration: none; color: white !important;}
+.nav a:hover{color: grey !important;}
+#logo{vertical-align: middle; width: auto; height: 80px; margin-bottom: -65px;}
+#navbutton{display:none;}
+/*nav items on desktop*/
+#nav-items {vertical-align: middle; text-align: right; padding-left: 0;}
+#nav-items li{display: inline; list-style-type: none; padding: 5px 20px;}
+.collapse{margin: 0; overflow-y: hidden; background: #0a314d;}
+
+@media (max-width: 991.98px){ 
+	.container{padding: 0 30px; max-width: 991.98px;}
+
+	/*####################################################*/
+	/*navbar*/
+	#nav-items {text-align: left;}
+	#nav-items li{display: block; padding: 10px 10px; }
+	#logo{margin: 10px 0; height: 50px; width: auto;}
+	#navbutton{display: inline; float: right; right: 10px; position: absolute;}
+	.collapse{overflow-y: hidden; display: block; background: #0a314d; max-height: 0; transition: max-height 0.5s ease-in-out;}
+	.collapse.show{overflow-y: hidden; max-height: 500px;}
+	#icon{margin: 10px 0;}
+}

@@ -1,0 +1,123 @@
+/*nav top*/
+#nav-top{
+	background:  #162e51 /*#C70039*/; 
+	color: white;
+}
+.nav-top{
+	display: flex; 
+	align-items: center; 
+	padding: 50px;
+}
+#logo{
+	height: 80px; 
+	width: auto;
+}
+#site-title{
+	font-size: 32px;
+	padding: 0px 10px; 
+	font-family: 'Merriweather'; 
+	text-decoration: none; 
+	color: white;
+}
+#site-title:hover{
+	text-decoration: underline;
+}
+#mobi-nav{
+	display: none; 
+	margin-left: auto; 
+	text-decoration: none; 
+	background: blue; 
+	color: white; 
+	padding: 10px;
+}
+
+#navbar-social-media{
+	margin-left: auto;
+}
+#navbar-social-media li{
+	display: inline; 
+	list-style-type: none; 
+	padding-right: 20px;
+}
+
+
+/*nav-menu*/
+.nav-links li{
+	display: inline; 
+	list-style-type: none; 
+	padding-right: 20px;
+}
+.nav-links a{
+	text-decoration: none; 
+	color: black; 
+	font-weight: bold; 
+	font-family: 'Arial';
+}
+
+
+@media (max-width: 991.98px){ 
+	.container{
+		padding: 10px 20px; 
+		max-width: 991.98px;
+	}
+	
+	/*nav-top*/
+	#nav-top{
+		padding: 10px;
+	}
+	#logo{
+		height: 50px;
+	}
+	#site-title{
+		font-size: 26px; 
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.container{
+		padding: 5px 15px; 
+		max-width: 767.98px;
+	}
+
+	#mobi-nav{
+		display: inline-block;
+	}
+	#nav-top{
+		padding: 5px;
+	}
+
+	/*nav-menu*/
+	.nav-links {
+		display: none;
+	}
+	.nav-links.open{
+		display: block;
+	}
+	.nav-links.open li{
+		display: block; 
+		padding-bottom: 10px;
+	}
+	
+	#navbar-social-media {
+		display: none;
+	}
+	#site-title{
+		font-size: 20px; 
+		padding: 0 10px;
+	}
+
+}
+
+@media (max-width: 575.98px) {
+	.container{
+		padding: 5px 10px; 
+		max-width: 575.98px;
+	}
+	#nav-top{
+		padding: 0;
+	}
+	#site-title{
+		font-size: 16px; 
+	}
+}
